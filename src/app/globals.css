@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-primary: #354936;
+  --color-primary-dark: #203A2B;
+  --color-gold: #C9A96E;
+  --color-sage: #A6B39A;
+  --color-olive-soft: #78866B;
+  --color-cream: #F6F1E7;
+  --color-ivory: #FFFDF7;
+  --color-charcoal: #30332D;
+  --font-cairo: 'Cairo', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-cairo), sans-serif; }
+
+@layer utilities {
+  .font-cairo { font-family: var(--font-cairo), sans-serif; }
+  .text-gold { color: var(--color-gold); }
+  .bg-primary { background-color: var(--color-primary); }
+  .text-primary { color: var(--color-primary); }
+}
